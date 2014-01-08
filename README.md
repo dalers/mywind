@@ -1,6 +1,8 @@
 northwind
 =========
 
+MySQL equivalent of MS Northwind database (MS Access 2010)
+
 The Northwind demo database provided with Microsoft Access is an excellent tutorial schema for managing small business customers, orders, inventory, purchasing, suppliers, shipping, and employees. My problem was that I wanted to experiment with it using [MySQL](http://www.mysql.com) and the [Yii Framework](http://www.yiiframework.com).
 
 Files
@@ -13,8 +15,8 @@ Files
 
 Conversion Procedure
 --------------------
-* Northwind database template created using MS Access 2010 (MS Access 2010 > File > New > Sample Templates > Northwind > SaveAs)
-* Convert Northwind.accdb to MySQL syntax using BullZip [Access to MySQL](http://www.bullzip.com) (version 5.1.242). [BullZip states Access to MySQL](http://www.bullzip.com/download.php) is "FREEWARE may be used free of charge for non-commercial purposes." (unfortunately it does not convert foreign key relationships though).
+* Created Northwind.aacdb using MS Access 2010 (MS Access 2010 > File > New > Sample Templates > Northwind > SaveAs)
+* Converted Northwind.accdb to MySQL SQL using BullZip [Access to MySQL](http://www.bullzip.com) (version 5.1.242). [BullZip states Access to MySQL](http://www.bullzip.com/download.php) is "FREEWARE may be used free of charge for non-commercial purposes." (unfortunately it does not convert foreign key relationships though).
 * Converted CamelCase identifiers to lower_case_with_underscore
 * Replaced space and slash characters in identifiers with _underscores_
 * Renamed primary key columns "id"
