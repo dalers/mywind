@@ -16,10 +16,13 @@ Files
 Conversion Procedure
 --------------------
 * Created Northwind.aacdb using MS Access 2010 (MS Access 2010 > File > New > Sample Templates > Northwind > SaveAs)
-* Converted Northwind.accdb to MySQL SQL using BullZip [Access to MySQL](http://www.bullzip.com) (version 5.1.242). [BullZip states Access to MySQL](http://www.bullzip.com/download.php) is "FREEWARE may be used free of charge for non-commercial purposes." (unfortunately it does not convert foreign key relationships though).
+* Converted Northwind.accdb to MySQL SQL using BullZip ["Access to MySQL"](http://www.bullzip.com).[1]
 * Converted CamelCase identifiers to lower_case_with_underscore
 * Replaced space and slash characters in identifiers with _underscores_
 * Renamed primary key columns "id"
 * Renamed foreign key columns "xxx_id" (e.g. "inventory_id")
 * Changed record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
 * Added foreign key relationships and created ERD using MySQL Workbench
+
+----
+ [1]: Version 5.1.242. *Access to MySQL* "...may be used free of charge for non-commercial purposes.", http://www.bullzip.com, accessed 2014-01-08.
