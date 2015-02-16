@@ -1,7 +1,7 @@
-northwind
+MyWind
 =========
 
-MySQL equivalent of MS Northwind database (MS Access 2010)
+MyWind - MySQL version of MS Northwind 2010 database (MS Access)
 
 The Northwind demo database provided with Microsoft Access is an excellent tutorial schema for managing small business customers, orders, inventory, purchasing, suppliers, shipping, and employees. My problem was that I wanted to experiment with it using [MySQL](http://www.mysql.com) and the [Yii Framework](http://www.yiiframework.com).
 
