@@ -12,16 +12,16 @@ The Northwind demo database provided with Microsoft Access is an excellent tutor
 * Structure 2: northwind-structure-timestamp.sql (record create and modified columns use DEFAULT CURRENT_TIMESTAMP, requires MySQL 5.6.5+)
 * Data: northwind-data.sql
 
-## How MyWind was Created
+## Creating MyWind
 
-* Created Northwind.aacdb using MS Access 2010 (MS Access 2010 > File > New > Sample Templates > Northwind > SaveAs)
-* Converted Northwind.accdb to MySQL SQL using BullZip ["Access to MySQL"](http://www.bullzip.com).[1]
+* Create Northwind.aacdb using MS Access 2010 (File > New > Sample Templates > Northwind > SaveAs)
+* Convert Northwind.accdb to MySQL SQL using BullZip ["Access to MySQL"](http://www.bullzip.com).[1]
 * Converted CamelCase identifiers to lower_case_with_underscore
-* Replaced space and slash characters in identifiers with _underscores_
-* Renamed primary key columns "id"
-* Renamed foreign key columns "xxx_id" (e.g. "inventory_id")
-* Changed record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
-* Added foreign key relationships and created ERD using MySQL Workbench
+* Replace space and slash characters in identifiers with _underscores_
+* Rename primary key columns "id"
+* Rename foreign key columns "xxx_id" (e.g. "inventory_id")
+* Change record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
+* Add foreign key relationships and create ERD using MySQL Workbench
 
 ----
  [1]: BullZip *Access to MySQL* version 5.1.242. *Access to MySQL* "...may be used free of charge for non-commercial purposes.", http://www.bullzip.com, accessed 2014-01-08.
