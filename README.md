@@ -24,13 +24,15 @@ I wanted to experiment with the schema using [MySQL](http://www.mysql.com).
 ## Creating MyWind
 
 * Created Northwind.aacdb using MS Access 2010 (File > New > Sample Templates > Northwind > SaveAs)
-* Converted Northwind.accdb to MySQL SQL using BullZip ["Access to MySQL"](http://www.bullzip.com).[1]
-* Converted CamelCase identifiers to lower_case_with_underscore
-* Replaced space and slash characters in identifiers_with_underscores
-* Renamed primary key columns "id"
-* Renamed foreign key columns "xxx_id" (e.g. "inventory_id")
-* Changed record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
-* Added foreign key relationships and created EER diagrams using MySQL Workbench
+* Converted Northwind.accdb to (MySQL) SQL using BullZip ["Access to MySQL"](http://www.bullzip.com).[1]
+* Manually edited SQL
+    * Converted CamelCase identifiers to lower_case_with_underscore
+    * Replaced space and slash characters in identifiers_with_underscores
+    * Renamed primary key columns "id"
+    * Renamed foreign key columns "xxx_id" (e.g. "inventory_id")
+    * Changed record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
+    * Created separate structure and data SQL files (or maybe it was done with [_Access to MySQL_](http://www.bullzip.com).
+* Imported SQL into MySQL Workbench
+    * Exported EER Diagrams
 
-----
  [1]: BullZip *Access to MySQL* version 5.1.242. *Access to MySQL* "...may be used free of charge for non-commercial purposes.", http://www.bullzip.com, accessed 2014-01-08.
