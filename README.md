@@ -31,7 +31,7 @@ I wanted to experiment with the schema using [MySQL](http://www.mysql.com).
     * Renamed primary key columns "id"
     * Renamed foreign key columns "xxx_id" (e.g. "inventory_id")
     * Changed record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
-    * Created separate structure and data SQL files (or maybe it was done with [_Access to MySQL_](http://www.bullzip.com).
+    * Created separate structure and data SQL files (or maybe it was done with [_Access to MySQL_](http://www.bullzip.com)).
 * Imported SQL into MySQL Workbench
     * Added foreign key relationships visually
     * Exported EER Diagrams
