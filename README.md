@@ -26,7 +26,7 @@ I wanted to experiment with the schema using [MySQL](http://www.mysql.com).
 * Created Northwind.aacdb using MS Access 2010 (File > New > Sample Templates > Northwind > SaveAs)
 * Converted Northwind.accdb to MySQL SQL using BullZip ["Access to MySQL"](http://www.bullzip.com).[1]
 * Converted CamelCase identifiers to lower_case_with_underscore
-* Replaced space and slash characters in identifiers with _underscores_
+* Replaced space and slash characters in identifiers_with_underscores
 * Renamed primary key columns "id"
 * Renamed foreign key columns "xxx_id" (e.g. "inventory_id")
 * Changed record create and modified date columns to type DATETIME to avoid TIMESTAMP range (1997 - 2038 UTC) and other limitations
