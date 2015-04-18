@@ -36,7 +36,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`customers` (
   INDEX `zip_postal_code` (`zip_postal_code` ASC),
   INDEX `state_province` (`state_province` ASC))
 ENGINE = InnoDB
-AUTO_INCREMENT = 30
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -70,7 +69,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`employees` (
   INDEX `zip_postal_code` (`zip_postal_code` ASC),
   INDEX `state_province` (`state_province` ASC))
 ENGINE = InnoDB
-AUTO_INCREMENT = 10
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -82,7 +80,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`privileges` (
   `privilege_name` VARCHAR(50) NULL DEFAULT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 3
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -151,7 +148,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`shippers` (
   INDEX `zip_postal_code` (`zip_postal_code` ASC),
   INDEX `state_province` (`state_province` ASC))
 ENGINE = InnoDB
-AUTO_INCREMENT = 4
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -239,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `northwind`.`orders` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 82;
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
@@ -263,7 +259,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`products` (
   PRIMARY KEY (`id`),
   INDEX `product_code` (`product_code` ASC))
 ENGINE = InnoDB
-AUTO_INCREMENT = 100
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -308,7 +303,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`suppliers` (
   INDEX `zip_postal_code` (`zip_postal_code` ASC),
   INDEX `state_province` (`state_province` ASC))
 ENGINE = InnoDB
-AUTO_INCREMENT = 11
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -355,7 +349,7 @@ CREATE TABLE IF NOT EXISTS `northwind`.`purchase_orders` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 149;
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
@@ -400,7 +394,7 @@ CREATE TABLE IF NOT EXISTS `northwind`.`inventory_transactions` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 137;
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
@@ -424,7 +418,7 @@ CREATE TABLE IF NOT EXISTS `northwind`.`invoices` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 40;
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
@@ -480,7 +474,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`order_details` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 92
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -520,7 +513,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`purchase_order_details` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 296
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -546,7 +538,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`strings` (
   `string_data` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`string_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 115
 DEFAULT CHARACTER SET = utf8;
 
 
