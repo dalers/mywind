@@ -180,8 +180,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`orders` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `employee_id` INT(11) NULL DEFAULT NULL,
   `customer_id` INT(11) NULL DEFAULT NULL,
---  `order_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,  (MySQL 5.6.5+)
---  `order_date` DATETIME NULL DEFAULT NULL, (value managed by application)
   `order_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `shipped_date` DATETIME NULL DEFAULT NULL,
   `shipper_id` INT(11) NULL DEFAULT NULL,
@@ -237,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `northwind`.`orders` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 82;
+DEFAULT CHARACTER SET = utf8;
 
 
 -- -----------------------------------------------------
@@ -316,8 +314,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`purchase_orders` (
   `supplier_id` INT(11) NULL DEFAULT NULL,
   `created_by` INT(11) NULL DEFAULT NULL,
   `submitted_date` DATETIME NULL DEFAULT NULL,
---  `creation_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, (MySQL 5.6.5+)
---  `creation_date` DATETIME NULL DEFAULT NULL,  (value managed by application)
   `creation_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `status_id` INT(11) NULL DEFAULT '0',
   `expected_date` DATETIME NULL DEFAULT NULL,
@@ -353,7 +349,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`purchase_orders` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 149
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -363,11 +358,7 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `northwind`.`inventory_transactions` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `transaction_type` TINYINT(4) NOT NULL,
---  `transaction_created_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, (MySQL 5.6.5+)
---  `transaction_created_date` DATETIME NULL DEFAULT NULL, (value managed by application)
   `transaction_created_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
---  `transaction_modified_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, (MySQL 5.6.5+)
---  `transaction_modified_date` DATETIME NULL DEFAULT NULL, (value managed by application)
   `transaction_modified_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `product_id` INT(11) NOT NULL,
   `quantity` INT(11) NOT NULL,
@@ -403,7 +394,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`inventory_transactions` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 137
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -413,8 +403,6 @@ DEFAULT CHARACTER SET = utf8;
 CREATE TABLE IF NOT EXISTS `northwind`.`invoices` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `order_id` INT(11) NULL DEFAULT NULL,
---  `invoice_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP, (MySQL 5.6.5+)
---  `invoice_date` DATETIME NULL DEFAULT NULL, (value managed by application)
   `invoice_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `due_date` DATETIME NULL DEFAULT NULL,
   `tax` DECIMAL(19,4) NULL DEFAULT '0.0000',
@@ -430,7 +418,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`invoices` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 40
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -487,7 +474,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`order_details` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 92
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -527,7 +513,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`purchase_order_details` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
-AUTO_INCREMENT = 296
 DEFAULT CHARACTER SET = utf8;
 
 
@@ -553,7 +538,6 @@ CREATE TABLE IF NOT EXISTS `northwind`.`strings` (
   `string_data` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`string_id`))
 ENGINE = InnoDB
-AUTO_INCREMENT = 115
 DEFAULT CHARACTER SET = utf8;
 
 
