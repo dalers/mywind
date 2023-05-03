@@ -11,7 +11,7 @@ The Northwind sample database provided with Microsoft Access is a tutorial schem
 
 ## WARNING
 
-* northwind.mdb -> northwind-02.mdb (and other new/modifed files in this commit) may be the result of correcting or improving the ERD model where it relates to sales orders and shipping (as presumed by addition of northwind-02-sales-orders-and-shipping.png). Whoever walks this way, please figure this out and deal with it appropriately.
+* northwind-02 (northwind-02.mwb and northwind-02-sales-orders-and-shipping.png) are a work in process and presumably related to improving the ERD model where it relates to sales orders and shipping, but the specifics have now been lost in time. If anyone sorts this out, I would sincerely appreciate a pull request (creating an issue would be just as appreciated). Thanks.
 
 ## Files
 
