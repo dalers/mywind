@@ -2,12 +2,7 @@
 
 MyWind is a MySQL version of the Microsoft Access 2010 *Northwind* sample database.
 
-The Northwind database is an excellent tutorial schema for a 
-small-business ERP, with customers, orders, inventory, purchasing, 
-suppliers, shipping, employees, and single-entry accounting. However,
-I wanted to experiment with the schema using [MySQL](http://www.mysql.com). 
-
-The Northwind sample database provided with Microsoft Access is a tutorial schema for managing small business customers, orders, inventory, purchasing, suppliers, shipping, and employees. My problem was I wanted to experiment with the Northwind schema using [MySQL](http://www.mysql.com).
+The Northwind sample database provided with Microsoft Access is an excellent tutorial schema for a small business to manage customers, orders, inventory, purchasing, suppliers, shipping, and employees, using single-entry accounting. However, I wanted to experiment with the Northwind schema using [MySQL](http://www.mysql.com).
 
 ## WARNING
 
